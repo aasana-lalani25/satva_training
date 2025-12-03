@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            img{
+                width: 100%;
+            }
+
+            p{
+                background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/07/Download-Free-Pictures-3840x2160.jpg");
+            }
+
+            body{
+                background-image: url('https://www.pixelstalk.net/wp-content/uploads/2016/07/Download-Free-Pictures-3840x2160.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 100%;
+            }
+        </style>
+    <title>HTML Images</title>
+    </head>    
+    <body>
+        <!--<img src="https://www.pixelstalk.net/wp-content/uploads/2016/07/Download-Free-Pictures-3840x2160.jpg" alt=" nature" width="500" height="500"> -->
+
+        <img src="https://www.pixelstalk.net/wp-content/uploads/2016/07/Download-Free-Pictures-3840x2160.jpg" alt=" nature" style="width:300px;height:300px;"> 
+        <img src="https://www.pixelstalk.net/wp-content/uploads/2016/07/Download-Free-Pictures-3840x2160.jpg" alt="nature" style="float: right; width: 300px; height: 300px;">
+
+
+        <!-- image map-->
+        <h2>Image Map</h2>
+        <img src="https://www.pixelstalk.net/wp-content/uploads/2016/07/Download-Free-Pictures-3840x2160.jpg" 
+        alt="nature" usemap="#naturemap" width="200" height="500">
+
+        <map name="naturemap">
+            <area shape="rect" coords="34,44,270,350" alt="Tree" href="https://en.wikipedia.org/wiki/Tree" onclick="myfunction()">
+            <area shape="rect" coords="290,172,333,250" alt="Sun" href="https://en.wikipedia.org/wiki/Sun">
+            <area shape="circle" coords="337,300,44" alt="Mountain" href="https://en.wikipedia.org/wiki/Mountain">   
+        </map>
+
+        <!-- alert in javascript-->
+        <script>
+            function myfunction(){
+                alert("clciked on the tree");
+            }
+        </script>
+        
+        <picture>
+            <source media="(min-width: 600px)" srcset="https://www.pixelstalk.net/wp-content/uploads/2016/07/Download-Free-Pictures-3840x2160.jpg">
+            <source media="(min-width: 465px)" srcset="https://www.pixelstalk.net/wp-content/uploads/2016/07/Download-Free-Pictures-3840x2160.jpg">
+            <img src="https://www.pixelstalk.net/wp-content/uploads/2016/07/Download-Free-Pictures-3840x2160.jpg" alt="nature" style="width:auto;">
+        </picture>
+
+
+    </body>
+
+</html>

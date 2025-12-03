@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Table Practice</title>
+
+    <style>
+        table {
+            border: 2px solid black;
+            border-collapse: separate;
+            border-spacing: 10px;
+            width: 80%;
+            
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+            
+        }
+        
+        table, th, td {
+            border-radius: 10px;
+        }   
+
+        <!--zebra strip-->
+        tr:nth-child(even) {
+            background-color: #983232;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>HTML Tables Practice</h1>
+
+    <h2>Basic Table</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Rahul</td>
+            <td>22</td>
+            <td>India</td>
+        </tr>
+        <tr>
+            <td>Riya</td>
+            <td>21</td>
+            <td>USA</td>
+        </tr>
+    </table>
+
+    <h2>Table with Caption</h2>
+    <table>
+        <caption>Student Marks Table</caption>
+        <tr>
+            <th>Student</th>
+            <th>Marks</th>
+        </tr>
+        <tr>
+            <td>Aman</td>
+            <td>85</td>
+        </tr>
+        <tr>
+            <td>Sara</td>
+            <td>90</td>
+        </tr>
+    </table>
+
+    <h2>Rowspan Example</h2>
+    <table>
+        <tr>
+            <th rowspan="2" style="background-color: #D6EEEE">Name</th>
+            <th colspan="2" >Subjects</th>
+        </tr>
+        <tr>
+            <th>Math</th>
+            <th>Science</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>75</td>
+            <td>80</td>
+        </tr>
+    </table>
+
+    <h2>Colspan Example</h2>
+    <table>
+        <tr>
+            <th colspan="3" style="background-color: palevioletred">Employee Details</th>
+        </tr>
+        <tr>
+            <td>ID</td>
+            <td>Name</td>
+            <td>City</td>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>Meena</td>
+            <td>Mumbai</td>
+        </tr>
+    </table>
+
+    <h2>Using thead, tbody, tfoot</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Qty</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Pen</td>
+                <td>2</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Book</td>
+                <td>1</td>
+                <td>50</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="2">Total</td>
+                <td>60</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
