@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap Practice</title>
+
+    <!-- Bootstrap CSS from file-->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h1 class="text-primary">Bootstrap is set up!</h1>
+        <p class="lead">If this heading is blue and the buttons are styled, CSS loaded correctly.</p>
+
+        <div class="mb-3">
+        <button class="btn btn-success" id="testBtn">Click me</button>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap JS from file -->
+    <script src="JS/bootstrap.min.js"></script>
+
+    <!-- script to test -->
+    <script>
+        document.getElementById('testBtn').addEventListener('click', () => {
+        alert('Bootstrap HTML loaded and JS is working.');
+        });
+    </script>
+</body>
+</html>
