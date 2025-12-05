@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Web page</title>
+        <link rel="stylesheet" href="CSS/bootstrap.min.css">
+        <link rel="stylesheet" href="CSS/style.css">
+
+    </head>
+
+    <body>
+        <script src="JS/bootstrap.min.js"></script>
+
+        <!-- adding navbar , container , header(hero)-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+
+                <a class="navbar-brand fw-bold" href="#">Website</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#">Pricing</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!--section for the content-->
+        <section id="hero" class="text-center py-5 bg-light">
+            <div class="container">
+                <h1 class="display-4">Creative Web Design</h1>
+                <p class="lead">Practice Bootstrap and CSS</p>
+                <a href="#services" class="btn btn-primary">Explore</a>
+            </div>
+        </section>
+
+        <!--section for the service card-->
+        <div class="card">
+        <section id="services" class="py-5">
+            <div class="container">
+                <h2 class="mb-4 text-center">Our Services</h2>
+                    <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card p-4 shadow service-card design-card">
+                        <h5>Design</h5>
+                        <p>Beautiful UI</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card p-4 shadow service-card dev-card">
+                            <h5>Dev</h5>
+                            <p>Responsive sites</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                    <div class=" card p-4 shadow service-card seo-card">
+                        <h5>SEO</h5>
+                        <p>Improve traffic</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+
+        <!--section for the contact -->
+        <section id="contact" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="mb-4 text-center">Contact</h2>
+                <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form class="p-4 bg-white rounded shadow">
+                    <input type="text" class="form-control mb-3" placeholder="Name" required>
+                    <input type="email" class="form-control mb-3" placeholder="Email" required>
+                    <textarea class="form-control mb-3" rows="4" placeholder="Message"></textarea>
+                    <button class="btn btn-primary w-100">Send</button>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </section>
+
+    </body>
+</html>

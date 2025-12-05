@@ -1,0 +1,40 @@
+body{
+    background-color: #44719f;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.card{
+    border-radius: 12px;
+    transition: transform .25s ease;
+    background: #094988;  
+    color: white; 
+}
+
+.card:hover{
+    transform: translateY(-6px);
+}
+
+#hero{
+    background-color: #26619c;
+    padding: 60px 0;
+    text-align: center;
+}
+.service-card {
+    border-radius: 12px;
+    transition: 0.3s;
+    color: #fff;
+}
+
+.design-card {
+    background: linear-gradient(135deg, #3832ab, #3F3DFF);
+}
+
+.dev-card {
+    background: linear-gradient(135deg, #00C9A7, #00A784);
+}
+
+.seo-card {
+    background: linear-gradient(135deg, #FF7B54, #FF5C28);
+}
