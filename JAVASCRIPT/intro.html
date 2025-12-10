@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Introduction</title>
+    </head>
+
+    <body>
+        <h2>What can JavaScript do?</h2>
+
+        <p id="demo"> JavaScript can chnage html message.</p>
+
+        <button type="button" onclick='document.getElementById("demo").innerHTML="HELLO JAVA SCRIPT!"'>Click Me!</button>
+
+        
+        <button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Click Me!</button>
+
+        <p> JavaScript change for the src(source) attribute of the img tag</p>
+        
+        <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">Turn on the light</button>
+        <img id ="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
+        <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">Turn off the light</button>
+        
+        <br><br> 
+        <!--HTML events-->
+        <button onclick="document.getElementById('demo').innerHTML=Date()">The time is ?</button>
+        <button onclick="this.innerHTML=Date()">The time is ?</button>
+
+        <p id="demo"></p>
+
+        <!-- By creating a function -->
+
+        <button onclick="displaydate()"> click for the time </button>
+
+        <script>
+            function displaydate(){
+                document.getElementById("demo").innerHTML=Date();
+            }
+        </script>
+    </body>
+</html>

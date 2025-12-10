@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <haed>
+        <title> Operator </title>
+    </haed>
+
+    <body>
+        <h2>Arithmatic Operator </h2>
+
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <h2> Operator on String</h2>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <h2>Comaprision operator</h2>
+        <p id="demo5"> </p>
+        <p id="demo6"></p>
+        <script>                                        //addition operator
+                let x=5;
+                let y=10;
+                let z=x+y;
+
+                document.getElementById("demo").innerHTML="The addition is :" +z;
+
+                let a=x*y;
+                document.getElementById("demo1").innerHTML="the multiplication is :" +a;
+
+                let b = (x+y) * a;
+                document.getElementById("demo2").innerHTML="the answer is :" +b;
+
+                //operators with strings
+                let str1="Hello";
+                let str2="Javascript";
+                let str3=str1+ " "+str2;
+                document.getElementById("demo3").innerHTML=str3;
+
+                //with concatenation assignment operator
+                str4="JavaScript";
+                str4 += " is fun!";
+                document.getElementById("demo4").innerHTML=  str4;
+
+                //comaprison operator
+
+                let p=5;
+                let q=10;
+
+                let r=p>q;
+                document.getElementById("demo5").innerHTML= "the comparison is :"+r;
+
+                //string comaparison
+                let text1="apple";
+                let text2="banana";
+                let text3 =text1 <text2;
+                document.getElementById("demo6").innerHTML= "the text comaparion is :"+text3;
+        </script>
+    </body>
+</html>
