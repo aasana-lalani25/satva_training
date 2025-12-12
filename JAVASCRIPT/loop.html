@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript Loop</title>
+</head>
+
+<body>
+    <h2>For loop in javascript</h2>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+    <h2>While loop in javascript</h2>
+    <p id="demo3"></p>
+    <h2>Do While loop in javascript</h2>
+    <p id="demo4"></p>
+    <h2>Break statement in javascript</h2>
+    <p id="demo5"></p>
+
+    <script>
+        const cars = ["BMW", "Volvo", "Duster", "Ford"];
+        let len = cars.length;
+
+        let text = "";
+        for (let i = 0; i < len; i++) {
+            text += cars[i] + "<br>";
+        }
+
+        document.getElementById("demo").innerHTML = text;
+
+        //setting expression 1 only once
+        let i = 2;
+        let text1 = "";
+
+        for (; i < len; i++) {
+            text1 += cars[i] + "<br>";
+        }
+
+        document.getElementById("demo1").innerHTML = text1;
+
+        //use of exp3
+
+        let i1 = 0;
+        let text2 = "";
+
+        for (; i1 < len;) {
+            text2 += cars[i1] + "<br>";
+            i1++;
+        }
+
+        document.getElementById("demo2").innerHTML = text2;
+
+        //while loop
+
+        let text3 = "";
+        let j = 0;
+        while (j < 10) {
+            text3 += "the number : " + j + "<br>";
+            j++;
+        }
+
+        document.getElementById("demo3").innerHTML = text3;
+
+        //do while loop
+        let text4 = "";
+        let k = 0;
+        do {
+            text4 += "the number is :" + k + "<br>";
+            k++;
+        } while (k < 10);
+
+        document.getElementById("demo4").innerHTML = text4;
+
+        //using break statement
+
+        let text5 = "";
+        for (let m = 0; m < 10; m++) {
+            if (m === 5) {
+                break;
+            }
+            text5 += "the number is :" + m + "<br>";
+        }
+
+        document.getElementById("demo5").innerHTML = text5;
+    </script>
+</body>
+
+</html>

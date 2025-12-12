@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Array</title>
+  </head>
+
+  <body>
+    <h2>javascript array</h2>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+
+    <script>
+      const fruits = ["Apple", "Banana", "Mango", "Orange"]; //array creation
+      let fruit = fruits[0]; //accessing array element
+
+      document.getElementById("demo").innerHTML =
+        "the first fruit is :" + fruit; //displaying the element
+
+      fruits[0] = "kiwi"; //modifying the array element
+      document.getElementById("demo1").innerHTML =
+        "the first fruit after modification is :" + fruits;
+
+      let mylist = fruits.toString(); //converting array to string
+      document.getElementById("demo2").innerHTML = mylist; //displaying the array elements as string
+
+      document.getElementById("demo3").innerHTML = fruits; //accessing all array elements
+
+      document.getElementById("demo4").innerHTML = fruits.length; //length of array
+
+      let fruit1 = fruits[fruits.length - 1];
+      document.write("<br>" + "the last fruit is :" + fruit1);
+
+      //using for each loop to access array elements
+      let txt = "";
+      fruits.forEach(myfunction);
+      txt += "<ul>";
+
+      document.getElementById("demo5").innerHTML = txt;
+
+      function myfunction(value) {
+        txt += "<li>" + value + "</li>";
+      }
+
+      fruits.push("Lemon"); //adding new element to array
+      document.write("<br>" + "the array after adding new fruit :" + fruits);
+
+      //typeof operator
+
+      document.getElementById("demo6").innerHTML = typeof fruits;
+
+      //nested Array
+      let x = "";
+      const myobj = {
+        name: "john",
+        age: 30,
+        cars: [
+          { name: "Ford", model: ["abc", "xyz", "def"] },
+          { name: "BMW", model: ["abc", "xyz", "def"] },
+          { name: "Fiat", model: ["abc", "xyz", "def"] },
+        ],
+      };
+
+      for (let i in myobj.cars) {
+        x += "<h2>" + myobj.cars[i].name + "</h2>";
+        for (let j in myobj.cars[i].model) {
+          x += myobj.cars[i].model[j] + "<br>";
+        }
+      }
+
+      document.getElementById("demo7").innerHTML = x;
+
+
+    </script>
+  </body>
+</html>
