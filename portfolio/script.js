@@ -48,9 +48,9 @@ document.getElementById("contactform").addEventListener("submit", function (e) {
 
   const navLinks = document.querySelectorAll(".navbar a");
 
-navLinks.forEach(link => {
+  navLinks.forEach((link) => {
     link.addEventListener("click", () => {
-        navbar.classList.remove("active");
+      navbar.classList.remove("active");
     });
-    });
+  });
 });
